@@ -37,10 +37,7 @@ canvas.addEventListener("mousemove", function(e){
     mouse.x = e.x - canvasPosition.left;
     mouse.y = e.y - canvasPosition.top;
 });
-    canvas.addEventListener('mouseleave', function(){
-        mouse.x = undefined;
-        mouse.y = undefined;
-});
+
 
 //game board
 const controlsBar = {
