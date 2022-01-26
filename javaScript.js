@@ -26,7 +26,7 @@ const mouse = {
     height: 0,
     clicked: false
 }
-canvas.addEventListener('click', function(){
+canvas.addEventListener('mousemove', function(){
 mouse.clicked = true;
 });
 
