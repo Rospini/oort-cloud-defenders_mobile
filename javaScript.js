@@ -22,16 +22,14 @@ let pickDefender = 0;
 const mouse = {
     x: undefined,
     y: undefined,
-    width: 0.1,
-    height: 0.1,
+    width: 0,
+    height: 0,
     clicked: false
 }
-canvas.addEventListener('mousedown', function(){
+canvas.addEventListener('click', function(){
 mouse.clicked = true;
 });
-canvas.addEventListener('mouseup', function(){
-    mouse.clicked = false;
-    });
+
 let canvasPosition = canvas.getBoundingClientRect();
 canvas.addEventListener("mousemove", function(e){
     mouse.x = e.x - canvasPosition.left;
